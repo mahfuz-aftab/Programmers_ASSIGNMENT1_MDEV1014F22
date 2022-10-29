@@ -8,6 +8,7 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: '#A7C7E7',
         padding: 10,
         alignItems: 'center',
+        flexWrap: 'wrap',
 
     },
     textStyle: {
@@ -22,7 +23,8 @@ export const globalStyles = StyleSheet.create({
 
     wrapperHeader: {
         backgroundColor: '#7393B3',
-        paddingTop: Platform.OS == 'android' ? 30 : 20,
+        // paddingTop: Platform.OS == 'android' ? 30 : 20,
+        paddingTop: '5%'
     },
 
     containerCredential: {
@@ -99,8 +101,8 @@ export const globalStyles = StyleSheet.create({
     },
     boxStyle: {
         width: "100%",
-        paddingStart: 10,
-        paddingEnd: 10
+        paddingStart: "10%",
+        paddingEnd: "10%"
     },
     boxNewz: {
         flex: 1,
