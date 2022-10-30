@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, SafeAreaView, Pressable } from 'react-native';
+import { Text, View, SafeAreaView, Pressable, ScrollView } from 'react-native';
 
 import { globalStyles } from '../../styles/globalStyles';
 
@@ -7,22 +7,24 @@ import { globalStyles } from '../../styles/globalStyles';
 const HomePage = ({ navigation }: { navigation: any }) => {
     return (
         <SafeAreaView style={globalStyles.wrapper}>
+          <ScrollView>
             <View>
-                <Text style={globalStyles.appLebelTitleText}>Welcome to Barrie Newz App</Text>
-                <Text style={globalStyles.appLabelTagLine}>The Ultimate Daily Newz Collection Around the World</Text>
+              <Text style={globalStyles.appLabelTitleText}>Welcome to Barrie Newz App</Text>
+              <Text style={globalStyles.appLabelTagLine}>The Ultimate Daily Newz Collection Around the World</Text>
             </View>
 
             <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.boxStyle]}>
-                <View style={globalStyles.defaultContainerHome}>
-                    <Text style={globalStyles.defaultContainerHomeText}>All Newz</Text>
-                </View>
+              <View style={globalStyles.defaultContainerHome}>
+                <Text style={globalStyles.defaultContainerHomeText}>All Newz</Text>
+              </View>
             </Pressable>
 
             <Pressable onPress={() => navigation.navigate('Newz Channels')} style={[globalStyles.boxStyle]}>
-                <View style={globalStyles.defaultContainerHome}>
-                    <Text style={globalStyles.defaultContainerHomeText}>Get All the Newz Channels</Text>
-                </View>
+              <View style={globalStyles.defaultContainerHome}>
+                <Text style={globalStyles.defaultContainerHomeText}>Get All the Newz Channels</Text>
+              </View>
             </Pressable>
+          </ScrollView>
         </SafeAreaView>
     )
 }
