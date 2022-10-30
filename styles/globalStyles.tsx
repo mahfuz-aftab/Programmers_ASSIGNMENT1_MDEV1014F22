@@ -1,16 +1,16 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 const colorBackgroundPrimary = '#A7C7E7'
 const colorBlack = '#000000'
 
 export const globalStyles = StyleSheet.create({
 
+    // Wrappers
     wrapper: {
         backgroundColor: colorBackgroundPrimary,
         height: '100%',
         padding: 10,
     },
-
     wrapperGuest: {
         backgroundColor: colorBackgroundPrimary,
         flex: 1,
@@ -18,11 +18,11 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
     },
 
+    // Header
     header: {
         backgroundColor: '#7393B3',
         paddingTop: '5%', // Platform.OS == 'android' ? 30 : 20,
     },
-
     headerText: {
         color: colorBlack,
         textAlign: 'center',
@@ -30,9 +30,8 @@ export const globalStyles = StyleSheet.create({
         paddingBottom: 10
     },
 
-    /*------*-------*/
-
-    appLabel: {
+    // Auth
+    titleLogin: {
         fontSize: 30,
         color: colorBlack,
     },
@@ -40,23 +39,13 @@ export const globalStyles = StyleSheet.create({
         fontSize: 20,
         color: colorBlack,
     },
-    inputStyle: {
+    formInput: {
         marginTop: 20,
         width: 300,
         height: 40,
         paddingHorizontal: 10,
         borderRadius: 50,
         backgroundColor: '#DCDCDC',
-    },
-    formText: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#fff',
-        fontSize: 20,
-    },
-    text: {
-        color: '#fff',
-        fontSize: 20,
     },
     buttonLogin: {
         alignItems: 'center',
@@ -78,9 +67,12 @@ export const globalStyles = StyleSheet.create({
         elevation: 3,
         backgroundColor: '#088F8F',
     },
+    buttonText: {
+        color: '#fff',
+        fontSize: 20,
+    },
 
     /*------*-------*/
-
     appLabelTitleText: {
         fontSize: 20,
         fontWeight: 'bold',
@@ -88,7 +80,6 @@ export const globalStyles = StyleSheet.create({
         marginTop: 30,
         marginBottom: 15,
     },
-
     appLabelTagLine: {
         fontSize: 12,
         fontWeight: '500',
@@ -101,7 +92,6 @@ export const globalStyles = StyleSheet.create({
         paddingEnd: "10%",
         marginBottom: 15,
     },
-
     defaultContainerHome: {
         flex: 1,
         justifyContent: 'center',
@@ -135,22 +125,22 @@ export const globalStyles = StyleSheet.create({
         lineHeight: 26.4,
         padding: '5%'
     },
-    /*------*-------*/
-    wrapperRow: {
+
+    // Channels
+    wrapperChannels: {
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         flexWrap: 'wrap',
     },
-    defaultContainerChannels: {
+    channelContainer: {
         flexBasis: '45%',
         marginTop: '3.5%',
         backgroundColor: '#ededed',
-        height: '45vw',
+        height: Dimensions.get('window').width / 2.25,
         borderRadius: 10
     },
-
-    iconStyle: {
+    channelLogo: {
         width: '100%',
         height: '100%',
         borderRadius: 10

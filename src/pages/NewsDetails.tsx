@@ -12,7 +12,7 @@ const NewsDetails = () => {
 
                 <View style={[globalStyles.boxStyle]}>
                     <View style={globalStyles.defaultContainerHome}>
-                        <Image style={globalStyles.iconStyle} source={require('./../../assets/app/Park.jpg')} />
+                        <Image style={globalStyles.channelLogo} source={require('./../../assets/app/Park.jpg')} />
                     </View>
                 </View>
 

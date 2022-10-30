@@ -10,20 +10,20 @@ const ChannelList = ({ navigation }: { navigation: any }) => {
                 <View>
                     <Text style={globalStyles.appLabelTitleText}>Get Channel wise Newz</Text>
                 </View>
-                <View style={globalStyles.wrapperRow}>
-                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.defaultContainerChannels]}>
-                        <Image style={globalStyles.iconStyle} source={require('./../../assets/app/news.png')} />
+                <View style={globalStyles.wrapperChannels}>
+                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.channelContainer]}>
+                        <Image style={globalStyles.channelLogo} source={require('./../../assets/app/news.png')} />
                     </Pressable>
 
-                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.defaultContainerChannels]}>
-                        <Image style={globalStyles.iconStyle} source={require('./../../assets/app/bbc.svg.png')} />
+                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.channelContainer]}>
+                        <Image style={globalStyles.channelLogo} source={require('./../../assets/app/bbc.svg.png')} />
                     </Pressable>
 
-                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.defaultContainerChannels]}>
-                        <Image style={globalStyles.iconStyle} source={require('./../../assets/app/cnn.svg.png')} />
+                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.channelContainer]}>
+                        <Image style={globalStyles.channelLogo} source={require('./../../assets/app/cnn.svg.png')} />
                     </Pressable>
-                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.defaultContainerChannels]}>
-                        <Image style={globalStyles.iconStyle} source={require('./../../assets/app/dw.svg.png')} />
+                    <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.channelContainer]}>
+                        <Image style={globalStyles.channelLogo} source={require('./../../assets/app/dw.svg.png')} />
                     </Pressable>
                 </View>
             </ScrollView>
