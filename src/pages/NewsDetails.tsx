@@ -7,13 +7,11 @@ const NewsDetails = () => {
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
                 <View>
-                    <Text style={globalStyles.appLabelTitleText}>New Playground Opening in Barrie</Text>
+                    <Text style={globalStyles.title}>New Playground Opening in Barrie</Text>
                 </View>
 
-                <View style={[globalStyles.boxStyle]}>
-                    <View style={globalStyles.defaultContainerHome}>
-                        <Image style={globalStyles.channelLogo} source={require('./../../assets/app/Park.jpg')} />
-                    </View>
+                <View>
+                    <Image style={globalStyles.newsImage} source={require('./../../assets/app/Park.jpg')} />
                 </View>
 
                 <View style={globalStyles.defaultContainerHome}>

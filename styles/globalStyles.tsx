@@ -18,6 +18,21 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
     },
 
+    // Headings
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginTop: 30,
+        marginBottom: 15,
+    },
+    subTitle: {
+        fontSize: 12,
+        fontWeight: '500',
+        textAlign: 'center',
+        marginBottom: 30,
+    },
+
     // Header
     header: {
         backgroundColor: '#7393B3',
@@ -72,19 +87,10 @@ export const globalStyles = StyleSheet.create({
         fontSize: 20,
     },
 
-    /*------*-------*/
-    appLabelTitleText: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        marginTop: 30,
-        marginBottom: 15,
-    },
-    appLabelTagLine: {
-        fontSize: 12,
-        fontWeight: '500',
-        textAlign: 'center',
-        marginBottom: 30,
+    // News
+    newsImage: {
+        width: "100%",
+        height: 240,
     },
     boxStyle: {
         width: "100%",

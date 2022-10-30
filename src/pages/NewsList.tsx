@@ -8,7 +8,7 @@ const NewsList = ({ navigation }: { navigation: any }) => {
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
               <View>
-                  <Text style={globalStyles.appLabelTitleText}>November 01, 2022</Text>
+                  <Text style={globalStyles.title}>November 01, 2022</Text>
               </View>
 
               <Pressable onPress={() => navigation.navigate('Newz Details')} style={[globalStyles.boxStyle]}>

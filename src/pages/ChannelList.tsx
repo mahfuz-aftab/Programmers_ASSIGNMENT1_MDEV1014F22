@@ -8,7 +8,7 @@ const ChannelList = ({ navigation }: { navigation: any }) => {
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
                 <View>
-                    <Text style={globalStyles.appLabelTitleText}>Get Channel wise Newz</Text>
+                    <Text style={globalStyles.title}>Get Channel wise Newz</Text>
                 </View>
                 <View style={globalStyles.wrapperChannels}>
                     <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.channelContainer]}>

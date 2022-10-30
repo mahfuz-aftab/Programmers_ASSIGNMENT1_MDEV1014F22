@@ -9,8 +9,8 @@ const Home = ({ navigation }: { navigation: any }) => {
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
                 <View>
-                  <Text style={globalStyles.appLabelTitleText}>Welcome to Barrie Newz App</Text>
-                  <Text style={globalStyles.appLabelTagLine}>The Ultimate Daily Newz Collection Around the World</Text>
+                  <Text style={globalStyles.title}>Welcome to Barrie Newz App</Text>
+                  <Text style={globalStyles.subTitle}>The Ultimate Daily Newz Collection Around the World</Text>
                 </View>
 
                 <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.boxStyle]}>
