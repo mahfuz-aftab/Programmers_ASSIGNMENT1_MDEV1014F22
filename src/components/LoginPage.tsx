@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextInput, View, StyleSheet, Platform, SafeAreaView, Button, Pressable } from 'react-native';
+import { Text, TextInput, View, SafeAreaView, Pressable } from 'react-native';
 
 import { globalStyles } from '../../styles/globalStyles';
 
@@ -8,7 +8,6 @@ const LoginPage = ({ navigation }: { navigation: any }) => {
 
         <SafeAreaView style={globalStyles.containerCredential}>
             <Text style={globalStyles.appLabel}> Barrie Newz </Text>
-            {/* <Text style={styles.formLabel}> Login </Text> */}
             <View>
                 <TextInput placeholder="Email" style={globalStyles.inputStyle} />
                 <TextInput

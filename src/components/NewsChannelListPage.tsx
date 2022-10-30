@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, Platform, SafeAreaView, Pressable, Image } from 'react-native';
+import { Text, View, SafeAreaView, Pressable, Image } from 'react-native';
 
 import { globalStyles } from '../../styles/globalStyles';
 
