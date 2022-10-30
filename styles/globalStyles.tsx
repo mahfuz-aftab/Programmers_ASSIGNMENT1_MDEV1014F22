@@ -139,14 +139,12 @@ export const globalStyles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         flexWrap: 'wrap',
-        backgroundColor: '#A7C7E7',
     },
-
     defaultContainerChannels: {
         flexBasis: '45%',
-        marginTop: '5%',
+        marginTop: '3.5%',
         backgroundColor: '#ededed',
-        height: '20%',
+        height: '45vw',
         borderRadius: 10
     },
 
