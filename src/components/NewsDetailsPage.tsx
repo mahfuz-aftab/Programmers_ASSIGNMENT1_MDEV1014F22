@@ -6,16 +6,16 @@ const NewsDetailsPage = () => {
     return (
         <SafeAreaView style={globalStyles.wrapper}>
             <View>
-                <Text style={globalStyles.appLebelTitleText}>New Playground Opening in Barrie</Text>
+                <Text style={globalStyles.appLabelTitleText}>New Playground Opening in Barrie</Text>
             </View>
 
-            <View style={[globalStyles.boxStyle, globalStyles.boxNewz]}>
+            <View style={[globalStyles.boxStyle]}>
                 <View style={globalStyles.defaultContainerHome}>
                     <Image style={globalStyles.iconStyle} source={require('./../../assets/app/Park.jpg')} />
                 </View>
             </View>
 
-            <View style={[globalStyles.boxStyle, globalStyles.boxNewzChannels]}>
+            <View style={[globalStyles.boxStyleChannels]}>
                 <View style={globalStyles.defaultContainerHome}>
                     <Text style={globalStyles.defaultContainerNewzLorem}>
 

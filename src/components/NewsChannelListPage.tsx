@@ -7,7 +7,7 @@ const NewsChannelListPage = ({ navigation }: { navigation: any }) => {
     return (
         <SafeAreaView style={globalStyles.wrapperRow}>
             <View>
-                <Text style={globalStyles.appLebelTitleText}>Get Channel wise Newz</Text>
+                <Text style={globalStyles.appLabelTitleText}>Get Channel wise Newz</Text>
             </View>
             <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.defaultContainerChannels]}>
                 <Image style={globalStyles.iconStyle} source={require('./../../assets/app/news.png')} />

@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 export const globalStyles = StyleSheet.create({
-
     wrapper: {
         backgroundColor: '#A7C7E7',
         padding: 10,
+        height: '100%',
     },
     textStyle: {
         color: '#000000',
@@ -27,7 +27,6 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: '#A7C7E7',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 50,
     },
 
     appLabel: {
@@ -80,30 +79,30 @@ export const globalStyles = StyleSheet.create({
 
     /*------*-------*/
 
-    appLebelTitleText: {
+    appLabelTitleText: {
         fontSize: 20,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: "20%",
-        marginBottom: "2%",
+        marginTop: 30,
+        marginBottom: 15,
     },
 
     appLabelTagLine: {
         fontSize: 12,
         fontWeight: '500',
         textAlign: 'center',
-        marginBottom: "10%",
+        marginBottom: 30,
     },
     boxStyle: {
         width: "100%",
         paddingStart: "10%",
-        paddingEnd: "10%"
+        paddingEnd: "10%",
+        marginBottom: 15,
     },
 
     defaultContainerHome: {
         flex: 1,
         justifyContent: 'center',
-        margin: "2%",
         backgroundColor: '#7393B3',
     },
     defaultContainerHomeText: {
@@ -111,6 +110,8 @@ export const globalStyles = StyleSheet.create({
         fontSize: 48,
         fontWeight: 'bold',
         textAlign: 'center',
+        paddingTop: 15,
+        paddingBottom: 15,
     },
     defaultContainerNewz: {
         flex: 1,
@@ -139,7 +140,6 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'space-evenly',
         flexWrap: 'wrap',
         backgroundColor: '#A7C7E7',
-
     },
 
     defaultContainerChannels: {
@@ -155,6 +155,5 @@ export const globalStyles = StyleSheet.create({
         height: '100%',
         borderRadius: 10
     }
-
 
 });
