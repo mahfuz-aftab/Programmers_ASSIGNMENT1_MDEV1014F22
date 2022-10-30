@@ -5,9 +5,8 @@ import { globalStyles } from '../../styles/globalStyles';
 
 const LoginPage = ({ navigation }: { navigation: any }) => {
     return (
-
         <SafeAreaView style={globalStyles.containerCredential}>
-            <Text style={globalStyles.appLabel}> Barrie Newz </Text>
+            <Text style={globalStyles.appLabel}>Barrie Newz</Text>
             <View>
                 <TextInput placeholder="Email" style={globalStyles.inputStyle} />
                 <TextInput
@@ -19,8 +18,7 @@ const LoginPage = ({ navigation }: { navigation: any }) => {
             <Pressable style={globalStyles.buttonLogin} onPress={() => navigation.navigate('Home')}>
                 <Text style={globalStyles.text}>Sign In</Text>
             </Pressable>
-
-            <Text onPress={() => navigation.navigate('Sign Up')}>Don't have an account!! Sign Up Now</Text>
+            <Text onPress={() => navigation.navigate('Sign Up')}>Don't have an account? Sign Up Now</Text>
         </SafeAreaView>
     )
 }

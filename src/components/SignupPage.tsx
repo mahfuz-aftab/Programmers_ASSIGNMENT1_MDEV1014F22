@@ -5,11 +5,8 @@ import { globalStyles } from '../../styles/globalStyles';
 
 
 const SignupPage = ({ navigation }: { navigation: any }) => {
-
   function confirmSignup() {
-    Alert.alert(
-      "Sign Up Confirmation", "Is your all input correct?",
-      [
+    Alert.alert("Sign Up Confirmation", "Is your all input correct?", [
         {
           text: "Cancel",
           onPress: () => console.log("Cancel Pressed"),
