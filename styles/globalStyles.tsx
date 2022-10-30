@@ -1,15 +1,10 @@
-import { Text, View, StyleSheet, Platform, SafeAreaView } from 'react-native';
-
+import { StyleSheet } from 'react-native';
 
 export const globalStyles = StyleSheet.create({
 
     wrapper: {
-        flex: 1,
         backgroundColor: '#A7C7E7',
         padding: 10,
-        alignItems: 'center',
-        flexWrap: 'wrap',
-
     },
     textStyle: {
         color: '#000000',
@@ -93,7 +88,7 @@ export const globalStyles = StyleSheet.create({
         marginBottom: "2%",
     },
 
-    appLebelTagLine: {
+    appLabelTagLine: {
         fontSize: 12,
         fontWeight: '500',
         textAlign: 'center',
@@ -104,25 +99,18 @@ export const globalStyles = StyleSheet.create({
         paddingStart: "10%",
         paddingEnd: "10%"
     },
-    boxNewz: {
-        flex: 1,
-    },
-    boxNewzChannels: {
-        flex: 2,
-    },
-
 
     defaultContainerHome: {
         flex: 1,
+        justifyContent: 'center',
         margin: "2%",
         backgroundColor: '#7393B3',
     },
     defaultContainerHomeText: {
         color: '#FFFFFF',
-        fontSize: 50,
+        fontSize: 48,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: '15%'
     },
     defaultContainerNewz: {
         flex: 1,
