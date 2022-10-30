@@ -1,42 +1,44 @@
 import { StyleSheet } from 'react-native';
 
+const colorBackgroundPrimary = '#A7C7E7'
+const colorBlack = '#000000'
+
 export const globalStyles = StyleSheet.create({
+
     wrapper: {
-        backgroundColor: '#A7C7E7',
-        padding: 10,
+        backgroundColor: colorBackgroundPrimary,
         height: '100%',
-    },
-    textStyle: {
-        color: '#000000',
-        textAlign: 'center',
-        paddingTop: 5,
-        paddingBottom: 10
-
+        padding: 10,
     },
 
-    /*------*-------*/
-
-    wrapperHeader: {
-        backgroundColor: '#7393B3',
-        // paddingTop: Platform.OS == 'android' ? 30 : 20,
-        paddingTop: '5%'
-    },
-
-    containerCredential: {
+    wrapperGuest: {
+        backgroundColor: colorBackgroundPrimary,
         flex: 1,
-        backgroundColor: '#A7C7E7',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
-    appLabel: {
-        fontSize: 30,
-        color: '#000000',
+    header: {
+        backgroundColor: '#7393B3',
+        paddingTop: '5%', // Platform.OS == 'android' ? 30 : 20,
     },
 
+    headerText: {
+        color: colorBlack,
+        textAlign: 'center',
+        paddingTop: 5,
+        paddingBottom: 10
+    },
+
+    /*------*-------*/
+
+    appLabel: {
+        fontSize: 30,
+        color: colorBlack,
+    },
     formLabel: {
         fontSize: 20,
-        color: '#000000',
+        color: colorBlack,
     },
     inputStyle: {
         marginTop: 20,
@@ -115,23 +117,23 @@ export const globalStyles = StyleSheet.create({
     },
     defaultContainerNewz: {
         flex: 1,
-        margin: "1%",
         backgroundColor: '#5F9EA0',
+        paddingBottom: '5%',
     },
     defaultContainerNewzText: {
         color: '#00008B',
         fontSize: 20,
         fontWeight: '500',
         textAlign: 'center',
-        marginTop: '5%'
+        marginTop: '5%',
+        marginHorizontal: '5%',
     },
     defaultContainerNewzLorem: {
         color: '#FFFFFF',
-        fontSize: 12,
+        fontSize: 16,
         fontWeight: '500',
-        marginBottom: '5%',
-        textAlign: 'justify',
-        padding: '3%'
+        lineHeight: 26.4,
+        padding: '5%'
     },
     /*------*-------*/
     wrapperRow: {

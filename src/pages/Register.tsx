@@ -4,7 +4,7 @@ import { Text, View, SafeAreaView, Pressable, TextInput, Alert } from 'react-nat
 import { globalStyles } from '../../styles/globalStyles';
 
 
-const SignupPage = ({ navigation }: { navigation: any }) => {
+const Register = ({ navigation }: { navigation: any }) => {
   function confirmSignup() {
     Alert.alert("Sign Up Confirmation", "Is your all input correct?", [
         {
@@ -17,7 +17,7 @@ const SignupPage = ({ navigation }: { navigation: any }) => {
   }
 
   return (
-    <SafeAreaView style={globalStyles.containerCredential}>
+    <SafeAreaView style={globalStyles.wrapperGuest}>
       <Text style={globalStyles.formLabel}>Sign Up</Text>
       <View>
         <TextInput placeholder="First Name" style={globalStyles.inputStyle} />
@@ -33,4 +33,4 @@ const SignupPage = ({ navigation }: { navigation: any }) => {
   )
 }
 
-export default SignupPage;
+export default Register;

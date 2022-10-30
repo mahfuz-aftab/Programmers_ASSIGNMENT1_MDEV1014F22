@@ -3,7 +3,7 @@ import { Text, View, SafeAreaView, Pressable, Image, ScrollView } from 'react-na
 
 import { globalStyles } from '../../styles/globalStyles';
 
-const NewsChannelListPage = ({ navigation }: { navigation: any }) => {
+const ChannelList = ({ navigation }: { navigation: any }) => {
   return (
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
@@ -31,4 +31,4 @@ const NewsChannelListPage = ({ navigation }: { navigation: any }) => {
     )
 }
 
-export default NewsChannelListPage;
+export default ChannelList;

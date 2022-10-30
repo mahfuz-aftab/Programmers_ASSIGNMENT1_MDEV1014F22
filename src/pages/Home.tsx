@@ -4,7 +4,7 @@ import { Text, View, SafeAreaView, Pressable, ScrollView } from 'react-native';
 import { globalStyles } from '../../styles/globalStyles';
 
 
-const HomePage = ({ navigation }: { navigation: any }) => {
+const Home = ({ navigation }: { navigation: any }) => {
     return (
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
@@ -29,4 +29,4 @@ const HomePage = ({ navigation }: { navigation: any }) => {
     )
 }
 
-export default HomePage;
+export default Home;

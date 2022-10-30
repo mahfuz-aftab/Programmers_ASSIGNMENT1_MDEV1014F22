@@ -3,7 +3,7 @@ import { Text, View, SafeAreaView, Pressable, ScrollView } from 'react-native';
 
 import { globalStyles } from '../../styles/globalStyles';
 
-const NewsListPage = ({ navigation }: { navigation: any }) => {
+const NewsList = ({ navigation }: { navigation: any }) => {
     return (
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
@@ -51,4 +51,4 @@ const NewsListPage = ({ navigation }: { navigation: any }) => {
     )
 }
 
-export default NewsListPage;
+export default NewsList;

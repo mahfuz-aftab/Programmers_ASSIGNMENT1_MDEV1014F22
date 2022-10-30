@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, SafeAreaView, Image, ScrollView } from 'react-native';
 import { globalStyles } from '../../styles/globalStyles';
 
-const NewsDetailsPage = () => {
+const NewsDetails = () => {
     return (
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
@@ -26,4 +26,4 @@ const NewsDetailsPage = () => {
     )
 }
 
-export default NewsDetailsPage;
+export default NewsDetails;

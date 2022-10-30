@@ -1,27 +1,27 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HeaderPage from './src/components/HeaderPage';
-import LoginPage from './src/components/LoginPage';
-import SignupPage from './src/components/SignupPage';
-import HomePage from './src/components/HomePage';
-import NewsChannelListPage from './src/components/NewsChannelListPage';
-import NewsListPage from './src/components/NewsListPage';
-import NewsDetailsPage from './src/components/NewsDetailsPage';
+import Header from './src/components/Header';
+import Login from './src/pages/Login';
+import Register from './src/pages/Register';
+import Home from './src/pages/Home';
+import NewsList from './src/pages/NewsList';
+import NewsDetails from './src/pages/NewsDetails';
+import ChannelList from './src/pages/ChannelList';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <HeaderPage></HeaderPage>
+      <Header></Header>
       <Stack.Navigator initialRouteName="Login Page">
-        <Stack.Screen name="Login" component={LoginPage} />
-        <Stack.Screen name="Home" component={HomePage} />
-        <Stack.Screen name="Sign Up" component={SignupPage} />
-        <Stack.Screen name="Newz Channels" component={NewsChannelListPage} />
-        <Stack.Screen name="All Newz" component={NewsListPage} />
-        <Stack.Screen name="Newz Details" component={NewsDetailsPage} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Newz Channels" component={ChannelList} />
+        <Stack.Screen name="All Newz" component={NewsList} />
+        <Stack.Screen name="Newz Details" component={NewsDetails} />
       </Stack.Navigator>
     </NavigationContainer>
 

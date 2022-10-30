@@ -3,12 +3,12 @@ import { Text, SafeAreaView } from 'react-native';
 
 import { globalStyles } from '../../styles/globalStyles';
 
-const HeaderPage = () => {
+const Header = () => {
     return (
-        <SafeAreaView style={globalStyles.wrapperHeader}>
-            <Text style={globalStyles.textStyle}>Barrie Newz</Text>
+        <SafeAreaView style={globalStyles.header}>
+            <Text style={globalStyles.headerText}>Barrie Newz</Text>
         </SafeAreaView>
     )
 }
 
-export default HeaderPage;
+export default Header;
