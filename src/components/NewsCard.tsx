@@ -12,9 +12,9 @@ type NewsCardPropTypes = {
 const NewsCard = ({ title, content, navigation }: NewsCardPropTypes) => {
   return (
     <Pressable onPress={() => navigation.navigate('Newz Details')} style={[globalStyles.boxStyle]}>
-      <View style={globalStyles.defaultContainerNewz}>
-        <Text style={globalStyles.defaultContainerNewzText}>{title}</Text>
-        <Text style={globalStyles.defaultContainerNewzLorem}>{content}</Text>
+      <View style={globalStyles.articleBox}>
+        <Text style={globalStyles.articleTitle}>{title}</Text>
+        <Text style={globalStyles.articleText}>{content}</Text>
       </View>
     </Pressable>
   );

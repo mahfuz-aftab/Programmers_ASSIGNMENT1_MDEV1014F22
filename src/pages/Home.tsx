@@ -14,14 +14,14 @@ const Home = ({ navigation }: { navigation: any }) => {
                 </View>
 
                 <Pressable onPress={() => navigation.navigate('All Newz')} style={[globalStyles.boxStyle]}>
-                  <View style={globalStyles.defaultContainerHome}>
-                    <Text style={globalStyles.defaultContainerHomeText}>All Newz</Text>
+                  <View style={globalStyles.homeBox}>
+                    <Text style={globalStyles.homeBoxText}>All Newz</Text>
                   </View>
                 </Pressable>
 
                 <Pressable onPress={() => navigation.navigate('Newz Channels')} style={[globalStyles.boxStyle]}>
-                  <View style={globalStyles.defaultContainerHome}>
-                    <Text style={globalStyles.defaultContainerHomeText}>Get All the Newz Channels</Text>
+                  <View style={globalStyles.homeBox}>
+                    <Text style={globalStyles.homeBoxText}>Get All the Newz Channels</Text>
                   </View>
                 </Pressable>
             </ScrollView>
