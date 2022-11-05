@@ -20,14 +20,14 @@ export const globalStyles = StyleSheet.create({
 
     // Headings
     title: {
-        fontSize: 20,
+        fontSize: 28,
         fontWeight: 'bold',
         textAlign: 'center',
         marginTop: 30,
         marginBottom: 15,
     },
     subTitle: {
-        fontSize: 12,
+        fontSize: 16,
         fontWeight: '500',
         textAlign: 'center',
         marginBottom: 30,
@@ -59,8 +59,9 @@ export const globalStyles = StyleSheet.create({
         width: 300,
         height: 40,
         paddingHorizontal: 10,
-        borderRadius: 50,
+        borderRadius: 12,
         backgroundColor: '#DCDCDC',
+        fontSize: 18
     },
     buttonLogin: {
         alignItems: 'center',
@@ -86,6 +87,9 @@ export const globalStyles = StyleSheet.create({
         color: '#fff',
         fontSize: 20,
     },
+    buttonTextLink: {
+        textDecorationLine: 'underline'
+    },
 
     // News
     newsImage: {
@@ -102,25 +106,29 @@ export const globalStyles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         backgroundColor: '#7393B3',
+        elevation: 3,
+        borderRadius: 12
     },
     defaultContainerHomeText: {
         color: '#FFFFFF',
-        fontSize: 48,
+        fontSize: 24,
         fontWeight: 'bold',
         textAlign: 'center',
         paddingTop: 15,
         paddingBottom: 15,
+        paddingHorizontal: 24
     },
     defaultContainerNewz: {
         flex: 1,
         backgroundColor: '#5F9EA0',
-        paddingBottom: '5%',
+        padding: 24,
+        borderRadius: 12,
+        elevation: 3
     },
     defaultContainerNewzText: {
-        color: '#00008B',
-        fontSize: 20,
-        fontWeight: '500',
-        textAlign: 'center',
+        color: '#fff',
+        fontSize: 22,
+        fontWeight: 'bold',
         marginTop: '5%',
         marginHorizontal: '5%',
     },

@@ -18,7 +18,7 @@ const Login = ({ navigation }: { navigation: any }) => {
             <Pressable style={globalStyles.buttonLogin} onPress={() => navigation.navigate('Home')}>
                 <Text style={globalStyles.buttonText}>Sign In</Text>
             </Pressable>
-            <Text onPress={() => navigation.navigate('Register')}>Don't have an account? Sign Up Now</Text>
+            <Text style={globalStyles.buttonTextLink} onPress={() => navigation.navigate('Register')}>Don't have an account? Sign Up Now</Text>
         </SafeAreaView>
     )
 }
