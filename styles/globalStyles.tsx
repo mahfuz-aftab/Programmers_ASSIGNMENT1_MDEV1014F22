@@ -70,7 +70,6 @@ export const globalStyles = StyleSheet.create({
         paddingVertical: 8,
         paddingHorizontal: 50,
         borderRadius: 4,
-        elevation: 3,
         backgroundColor: '#0047AB',
     },
     buttonSignup: {
@@ -80,7 +79,6 @@ export const globalStyles = StyleSheet.create({
         paddingVertical: 8,
         paddingHorizontal: 50,
         borderRadius: 4,
-        elevation: 3,
         backgroundColor: '#088F8F',
     },
     buttonText: {
@@ -91,25 +89,20 @@ export const globalStyles = StyleSheet.create({
         textDecorationLine: 'underline'
     },
 
-    // News
-    newsImage: {
-        width: "100%",
-        height: 240,
-    },
+    // Content Boxes
     boxStyle: {
         width: "100%",
         paddingStart: "10%",
         paddingEnd: "10%",
         marginBottom: 15,
     },
-    defaultContainerHome: {
+    homeBox: {
         flex: 1,
         justifyContent: 'center',
         backgroundColor: '#7393B3',
-        elevation: 3,
         borderRadius: 12
     },
-    defaultContainerHomeText: {
+    homeBoxText: {
         color: '#FFFFFF',
         fontSize: 24,
         fontWeight: 'bold',
@@ -118,26 +111,39 @@ export const globalStyles = StyleSheet.create({
         paddingBottom: 15,
         paddingHorizontal: 24
     },
-    defaultContainerNewz: {
+
+    // News (List + Single)
+    articleBox: {
         flex: 1,
         backgroundColor: '#5F9EA0',
         padding: 24,
         borderRadius: 12,
-        elevation: 3
     },
-    defaultContainerNewzText: {
+    articleTitle: {
         color: '#fff',
         fontSize: 22,
         fontWeight: 'bold',
         marginTop: '5%',
         marginHorizontal: '5%',
     },
-    defaultContainerNewzLorem: {
+    articleText: {
         color: '#FFFFFF',
         fontSize: 16,
         fontWeight: '500',
         lineHeight: 26.4,
         padding: '5%'
+    },
+
+    // News (Single)
+    articleSingleImage: {
+        width: "100%",
+        height: 240,
+    },
+    articleSingleBox: {
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#7393B3',
+        borderRadius: 0
     },
 
     // Channels
